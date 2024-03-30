@@ -1,0 +1,56 @@
+.modale_LB {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.modal_LB_close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  background-color:red;
+  color:white;
+  font-weight:bold;
+  padding-top:0px;
+  
+  border-radius:15px;
+  font-size:80%;
+  text-decoration:none;
+  content:"x";
+}
+
+.modale_LB:not(:target) {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.image-modale {
+  width: 150px;
+  padding: 10px;
+  border: 10px solid gray;
+  margin:5px;
+}
+
+.modal_LB_window {
+  position: relative;
+  background-color: white;
+  padding: 4em 2em;
+  border: 5px solid red;
+  z-index: 1;
+  border-radius: 15px;
+}
+.modal_LB_close:hover {
+  background-color: yellow;
+  border: 2px solid green;
+  content: "x";
+}
